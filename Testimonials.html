@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials</title>
+<link rel="stylesheet" href="testimonials.css">
+</head>
+<body>
+<header>
+<h1>Testimonials</h1>
+<nav>
+    <ul>
+        <li><a href="portfolio.html" target="_self">Portfolio</a></li>
+        <li><a href="Blog.html" target="_self">Blog</a></li>
+        <li><a href="Resume.html" target="_self">Resume</a></li>
+        <li><a href="Services.html" target="_self">Services</a></li>
+        <li><a href="Testimonials.html" target="_self">Testimonials</a></li>
+        <li><a href="FAQ.html" target="_self">FAQ</a></li>
+        <li><a href="index.html" class="back-to-home">Home</a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="testimonial">
+    <div class="testimonial-text" class="container">
+        <img src="Carla-Testimonials-profile.jpg" alt="Image">
+        <p>Your Css portrait is really impressive! I love the attention to detail and the creativity you've put into it. The colors are vibrant, and the use of gradients adds depth to the design. However I noticed some few areas that could be improved. Firstly some of the text seems a bit small on mobile devices,making it difficult to read. It would be great if we could adjust the font size to ensure a better user experience across all devices.</p>
+        <p class="name">Carla Marie</p>
+        <p class="affiliation">mywife</p>
+    </div>
+</div>
+<div class="testimonial">
+     <div class="testimonial-text" class="container">
+         <img src="Carla-Testimonials-profile.jpg" alt="Image">
+         <p>Im really pleased with the website you've created for me. The layout is clean and the navigation is intimate,making it easy for visitors to find what they need. It's clear that you've put a lot of thought into the design that's why the results are very impressive!</p>
+         <p class="name">Carla Marie</p>
+         <p class="affiliation">mywife</p>
+     </div>
+</div>      
+</div>
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+  
+<footer>
+    <script>
+        let slideIndex = 0;
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName("testimonial");
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+}
+
+function moveSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+showSlide(slideIndex);
+
+    </script>
+<p> yunekwashi.</p>
+</footer>
+</body>
+</html>

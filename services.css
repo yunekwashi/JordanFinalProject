@@ -1,0 +1,83 @@
+header {
+    background-image: url("background-header.jpg");
+    color: white; 
+    padding: 5px 0; 
+    text-align: center; 
+}
+
+nav ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block; 
+  margin-right: 20px; 
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+  color: yellow; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    background-image: url("background-home.jpg")
+    
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h3 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .service p {
+    color: white;
+  }
+  
+footer {
+    text-align: center;
+    padding: 0;
+    background-image: url("background-header.jpg");
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
